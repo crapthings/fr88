@@ -1,18 +1,7 @@
-export default function () {
-  useEffect(function () {
-    console.log('home mount')
-    const trackerHandler = Tracker.nonreactive(function () {
-      return Tracker.autorun(function () {
-        console.log(FlowRouter.current(), FlowRouter.getQueryParam('something'))
-      })
-    })
-
-    return function () {
-      console.log('home unmount')
-      trackerHandler?.stop()
-    }
-  }, [])
+export default React.memo(function () {
+  const something = useQuery(['something', 'wow'])
+  console.log('home page', something)
   return (
     <div>home</div>
   )
-}
+})

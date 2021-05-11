@@ -18,6 +18,7 @@ function Nav () {
 
       <ul>
         <li><a href='/?something=test123'>home with /?something=test123</a></li>
+        <li><a href='/?something=test123&wow=ads'>home with /?something=test123&wow=ads</a></li>
         <li><a href='/page1?something=test123'>home with /?something=test123</a></li>
         <li><a href='/page2?something=test123'>home with /?something=test123</a></li>
       </ul>
