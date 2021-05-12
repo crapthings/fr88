@@ -1,8 +1,10 @@
 export default function () {
-  useEffect(function () {
+  useLayoutEffect(function () {
     console.log('page1 mount')
-    const trackerHandler = Tracker.autorun(function () {
-      console.log(FlowRouter.current(), FlowRouter.getQueryParam('something'))
+    const trackerHandler = Tracker.nonreactive(function () {
+      return Tracker.autorun(function () {
+        console.log('page1 inside tracker', FlowRouter._current, FlowRouter.getQueryParam('something'))
+      })
     })
 
     return function () {
@@ -10,6 +12,7 @@ export default function () {
       trackerHandler?.stop()
     }
   }, [])
+
   return (
     <div>page1</div>
   )

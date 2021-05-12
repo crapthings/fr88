@@ -6,10 +6,12 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
+    "faker": "^5.5.3",
+    "json-circular-stringify": "^1.0.1",
     "lodash": "^4.17.21",
     "meteor-node-stubs": "^1.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "0.0.0-experimental-3890fb52f",
+    "react-dom": "0.0.0-experimental-3890fb52f"
   },
   "meteor": {
     "mainModule": {
