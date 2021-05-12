@@ -8,3 +8,4 @@ useLayoutEffect = React.useLayoutEffect
 useRef = React.useRef
 
 useQuery = require('/imports/useQuery').default
+useParam = require('/imports/useParam').default

@@ -14,6 +14,7 @@ function Nav () {
         <li><a href='/'>home</a></li>
         <li><a href='/page1'>page1</a></li>
         <li><a href='/page2'>page2</a></li>
+        <li><a href='/page3/abc/def'>page3</a></li>
       </ul>
 
       <ul>
